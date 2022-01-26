@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class TextTwister {
@@ -127,4 +128,13 @@ public class TextTwister {
     For example, if the word is arches, and the player guessed arches and chaser, add 108 pts for both words.
     *
     * */
+        public static void main(String[] args) {
+            List<String> inputWords = new ArrayList<>();
+            inputWords.add("trance");
+            inputWords.add("recant");
+            String word = "recant";
+
+            int points = TextTwister.totalPoints(inputWords,word);
+            System.out.println(points);
+        }
 }
